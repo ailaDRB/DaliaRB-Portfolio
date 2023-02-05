@@ -1,0 +1,452 @@
+/* this is css comments*/
+body, html {
+  height: 100%;
+  margin: 0;
+}
+header {
+  background: linear-gradient(90deg, rgb(191, 148, 192) 0%, rgb(250, 215, 179) 100%); 
+
+}
+ul{
+  margin:0;
+  padding:0;
+  display:flex;
+  justify-content: space-evenly;
+}
+
+ul li{
+  list-style:none;
+  margin:0 20px;
+  transition:0.5s;
+  top: 0;
+}
+
+ul li a{
+  display: block;
+  position:relative;
+  text-decoration:none;
+  padding:5px;
+  font-size:50px;
+  font-family: 'Work Sans', sans-serif;
+  color: rgb(145, 138, 228);
+  text-transform:uppercase;
+  transition:0.5s;
+}
+
+ul:hover li a{
+  transform:scale(1.5);
+  opacity:0.2;
+  filter:blur(5px);
+}
+
+ul li a:hover{
+  transform:scale(2);
+  opacity:1;
+  filter:blur(0);
+  text-decoration:none;
+  color:#fff;
+}
+
+ul li a:before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: linear-gradient(
+    -225deg,
+    rgb(145, 138, 228) 0%,
+    rgb(222, 155, 225) 29%,
+    rgb(130, 181, 209)  67%,
+    rgb(227, 151, 103)100%
+  );
+  transition:0.5s;
+  transform-origin:right;
+  transform:scaleX(0);
+  z-index:-1;
+}
+
+ul li a:hover:before{
+  transition:transform 0.5s;
+  transform-origin:left;
+  transform:scaleX(1);
+}
+
+#intro{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  
+}
+#catright{
+  float: right;/* The float property is used to position the images to the left and right  */
+ 
+  border-radius: 50%; /* Make the corners rounded */
+          width: 280px; /* Set the width of the image */
+          height: 280px; /* Set the height of the image */
+          
+}
+#catleft{
+  float: left; 
+  border-radius: 50%; /* Make the corners rounded */
+          width: 280px; /* Set the width of the image */
+          height: 280px; /* Set the height of the image */
+}
+#introtext{
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  transition: transform .2s;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    rgb(145, 138, 228) 0%,
+    rgb(222, 155, 225) 29%,
+    rgb(130, 181, 209)  67%,
+    rgb(227, 151, 103)100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 40px;
+}
+#introtext:hover{
+
+  transform: scale(1.5);
+}
+
+@keyframes textclip {
+  to {
+    background-position: 100% center;
+  }
+}
+
+body{
+    background: rgb(227, 151, 103);
+    font-family: 'Work Sans', sans-serif;
+    color: rgb(243, 243, 243);
+    background: linear-gradient(90deg, rgb(191, 148, 192) 0%, rgb(250, 215, 179) 100%); 
+}
+
+
+#about{
+  margin-top: 60%;
+}
+#hello{
+  text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+  9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+font-family: 'Work Sans', sans-serif;
+font-weight: 400;
+text-transform: uppercase;
+font-size: calc(2rem + 5vw);
+text-align: center;
+margin: 0;
+color: var(--color-primary);
+animation: 1.2s ease-in infinite, move 1.2s ease-in infinite;
+letter-spacing: 0.4rem;
+}
+
+@keyframes move {
+0% {
+  transform: translate(0px, 0px);
+}
+40% {
+  transform: translate(-12px, -12px);
+}
+50% {
+  transform: translate(-12px, -12px);
+}
+60% {
+  transform: translate(-12px, -12px);
+}
+100% {
+  transform: translate(0px, 0px);
+}
+}
+
+h2 {
+  text-align: center;
+  color:rgb(145, 138, 228);
+  font-size: 50px;
+  letter-spacing: 7px;
+  cursor: pointer
+
+}
+h2:hover {
+  color: #fff;
+  text-shadow: 0 0 10px #fff,
+               0 0 20px #fff, 
+               0 0 40px #fff;
+}
+h2 span{
+  transition: .5s linear
+}
+h2:hover span:nth-child(1){
+  margin-right: 5px
+}
+h2:hover span:nth-child(1):after{
+  content: "'";
+}
+h2:hover span:nth-child(2){
+  margin-left: 30px
+}
+h2:hover span{
+  color: #fff;
+  text-shadow: 0 0 10px #fff,
+               0 0 20px #fff, 
+               0 0 40px #fff;
+}
+
+    
+#dalia {
+         
+          width: 390px; /* Set the width of the image */
+          height: 390px; /* Set the height of the image */
+          transition: 1s ease;
+        }
+        #dalia:hover{
+          color: blue;
+          border-radius:50%;
+transition: 1s ease;
+        }
+        .center {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          
+        }
+ 
+        .container2{
+          width: 50%;
+          margin: 0 auto;
+        }
+        @keyframes load{
+          from {
+            width: 0%
+          }
+        }
+        @-webkit-keyframes load{
+          from {
+            width: 0%
+          }
+        }
+        @-moz-keyframes load{
+          from {
+            width: 0%
+          }
+        }
+        @-o-keyframes load{
+          from {
+            width: 0%
+          }
+        }
+        
+        .bar{
+          background-color: rgba(238, 238, 238, 0.312);
+          padding: 2px;
+          border-radius: 15px;
+          margin-bottom: 5px;
+          font-size: 14px;
+          color: #FFF;
+          font-weight: bold;
+          text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+        }
+        .bar::before{
+          content:  attr(data-skill);
+          background-color:#e7b1f1;
+          display: inline-block;
+          padding: 5px 0 5px 10px;
+          border-radius: inherit;
+          animation: load 2s 0s;
+          -webkit-animation: load 2s 0s;
+          -moz-animation: load 2s 0s;
+          -o-animation: load 2s 0s;
+        }
+        
+        .bar.front::before{
+          background-color: 
+          rgb(187, 183, 230) ;
+        }
+        .bar.back::before{
+          background-color: #a6cfe3;
+        }
+        
+        .bar.learning::before{
+          width: calc(20% - 10px);
+        }
+        .bar.basic::before{
+          width: calc(50% - 10px);
+        }
+        .bar.intermediate::before{
+          width: calc(65% - 10px);
+        }
+        .bar.advanced::before{
+          width: calc(80% - 10px);
+        }
+        .bar.expert::before{
+          width: calc(90% - 10px);
+        }     
+
+.p1{
+  color: rgb(122, 121, 143);
+  text-align: right;
+  margin: 30px;
+  font-size: 23px;
+  background: -webkit-linear-gradient(rgb(48, 138, 186), rgb(201, 110, 54));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+p {
+  color: rgb(122, 121, 143);
+  text-align: center;
+  margin: 30px;
+  font-size: 23px;
+  background: -webkit-linear-gradient(rgb(102, 172, 216), rgb(159, 60, 139));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.p2{
+  width: 50%;
+   margin: 0 auto;
+}
+.imgporto{
+  width: 40%;
+  margin: 0 auto;
+}
+
+#img1 {
+  float: right;/* The float property is used to position the images to the left and right  */
+ 
+  border-radius: 50%; /* Make the corners rounded */
+          width: 280px; /* Set the width of the image */
+          height: 280px; /* Set the height of the image */
+}
+#img2 {
+  float: left;/* The float property is used to position the images to the left and right  */
+ 
+  border-radius: 50%; /* Make the corners rounded */
+          width: 280px; /* Set the width of the image */
+          height: 280px; /* Set the height of the image */
+}
+
+ ul{
+  font-size: 23px;
+ }
+ .buttons-container {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ button {
+  border: #a6cfe3;
+  background: white;
+  padding: .5em .5em;
+  font-size: 1rem;
+}
+
+.button-arounder {
+  font-size: 2rem;
+  background:linear-gradient(
+    -225deg,
+    rgb(145, 138, 228) 0%,
+    rgb(222, 155, 225) 29%,
+    rgb(130, 181, 209)  67%,
+    rgb(227, 151, 103)100%
+  );
+  
+  color: hsl(190deg, 10%, 95%);
+  
+  box-shadow: 0 0px 0px rgba(196, 229, 240, 0.2);
+  transfrom: translateY(0);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  
+  --dur: .15s;
+  --delay: .15s;
+  --radius: 16px;
+  
+  transition:
+    border-top-left-radius var(--dur) var(--delay) ease-out,
+    border-top-right-radius var(--dur) calc(var(--delay) * 2) ease-out,
+    border-bottom-right-radius var(--dur) calc(var(--delay) * 3) ease-out,
+    border-bottom-left-radius var(--dur) calc(var(--delay) * 4) ease-out,
+    box-shadow calc(var(--dur) * 4) ease-out,
+    transform calc(var(--dur) * 4) ease-out,
+    background calc(var(--dur) * 4) steps(4, jump-end);
+}
+
+.button-arounder:hover,
+.button-arounder:focus {
+  box-shadow: 0 4px 8px rgba(209, 160, 228, 0.252);
+  transform: translateY(-4px);
+  background: rgb(159, 171, 232);
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+}
+.p3{
+
+  width: 50%;
+   margin: 0 auto;
+
+}
+
+form { 
+  max-width:420px;
+   margin:50px auto; 
+  }
+
+.feedback-input {
+  color:white;
+  font-family: 'Work Sans', sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid rgb(237, 187, 239);
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid rgb(164, 115, 165); }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Work Sans', sans-serif;
+  width: 100%;
+  background: linear-gradient(90deg, rgb(237, 187, 239) 0%, hsla(30, 82%, 91%, 1) 100%);
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background: linear-gradient(90deg, rgb(191, 148, 192) 0%, rgb(250, 215, 179) 100%); }
